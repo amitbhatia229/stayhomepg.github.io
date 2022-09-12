@@ -1,0 +1,323 @@
+<!DOCTYPE html>     <!------@created and designed by AMIT BHATIA-------->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PG_Details</title>
+  <link rel="icon" href="PG home logo.jpg">
+  <link rel="stylesheet" href="bootstrap-4.6.1-dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <script  type="text/javascript">
+    
+    
+    function reset(){
+    	
+    	document.getElementById("form").reset();
+    }
+    
+    </script>
+    
+    <style type="text/css">
+      .clr
+      {
+        background-color: #f5f5f5;
+      }
+      
+    .vertical-nav 
+    {
+      padding-top: 50px;
+      width: 100%;
+
+
+    }
+
+
+
+</style>
+</head>
+<body>
+<!-------------------horizontal navbar--------------------->
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top py-0">
+  <a class="navbar-brand" href="Home_Tab.html" style="margin-left:-9px;"><img src="PG home logo.jpg" alt="logo" width="50px" height="40px"> Stay Home</a>
+
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#abc">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="abc">
+    <ul class="navbar nav ml-auto">
+      <li class="nav-item"><a class="nav-link text-dark" href="#"><span class="bi bi-person-circle"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-------------------horizonatal navbar--------------------->
+
+<!-------------------vertical navbar--------------------->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-2 bg-light vertical-nav">
+      <h4 class="text-info text-center">PG OWNER DASHBOARD</h4>
+      <div class="text-center mt-sm-4">
+        <p><a class="text-warning" href="PG_OwnerDashboard">Dashboard</a></p>
+        <p><a class="text-warning active"  href="Add_PG.html">Add PG Details</a></p>
+        <p><a class="text-warning " href="#">Update PG Details</a></p>
+        <p><a class="text-warning" href="#" data-toggle="modal" data-target="#change_password">Change Password</a></p>
+        <p><a class="text-warning" href="#">Notifications</a></p>
+      </div>
+    </div>
+    <!--------------vertical-navbar------------------------->
+
+    <!--------------------------Add PG Details Content---------------->
+    <div class="col-lg-10 col-md-10 col-sm-10 clr">
+
+      <div class="text-center text-info">
+        <h3 style="padding-top:60px;">Add PG Details</h3>
+      </div>
+      <form action="addpg" method="POST" id="form">
+      <div class="row mt-5" style="justify-content: safe center;">
+        <div class="col-lg-4 col-sm-4 col-md-4 mx-5">
+          <div class="form-group">
+            <label>PG Name</label>
+            <input type="text" class="form-control" placeholder="PG name" id="" name="pg_name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Select State</label>
+            <select id="type" class="form-control" name="state" required>
+              <option value="Himachal">Himachal</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Chandigarh">Chandigarh</option>
+            </select>   
+          </div>
+
+          <div class="form-group">
+            <label>No. of Rooms</label>
+            <input type="number" class="form-control" placeholder="Rooms" id="" name="rooms" required>
+          </div>
+
+          <div class="form-group">
+            <label>Room Rent</label><br>
+            <input type="text" class="form-control" placeholder="Enter Rent"  name="rent" required>
+          </div>
+        
+          
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 mx-5">
+          
+          <div class="form-group">
+            <label>Type of PG</label>
+            <select id="type" class="form-control" name="type" required>
+              <option value="Boys">Boys</option>
+              <option value="Girls">Girls</option>
+              <option value="Both">Both</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Select City</label>
+            <select id="type" class="form-control" name="city" required>
+              <option value="Shimla">Shimla</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Gurgaon">Gurgaon</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Address</label><br>
+            <textarea rows="1" placeholder="Address" class="form-control" name="address" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Upload Image</label>
+            <input type="file" class="form-control-file" id="" name="image">
+            <button class="btn btn-secondary my-2 btn-sm" value="upload">Upload</button>
+          </div>
+          
+        </div>  
+        </div><hr class="mx-sm-4">
+        
+        <div class="row">
+          <div class="mx-sm-5">
+            <h5 class="text-info">Amenities Offered:-</h5>
+          </div>
+
+          <div class="container">
+            <div class="row mx-sm-5 px-sm-2">
+              <div class="col-lg-12 col-sm-12 col-md-12">
+                <table class="table table-borderless">
+                  <tbody>
+                    <tr>
+                      <td>Electricity:-</td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="yes" name="electricity">
+                        <label class="form-check-label" for="">Yes</label>
+                      </td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="no" name="electricity">
+                        <label class="form-check-label" for="">No</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Wi-fi:-</td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="yes" name="wi_fi">
+                        <label class="form-check-label" for="">Yes</label>
+                      </td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="no" name="wi_fi">
+                        <label class="form-check-label" for="">No</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Power-Backup:-</td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="yes" name="power">
+                        <label class="form-check-label" for="">Yes</label>
+                      </td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="no" name="power">
+                        <label class="form-check-label" for="">No</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Television</td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="yes" name="tv">
+                        <label class="form-check-label" for="">Yes</label>
+                      </td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="no" name="tv">
+                        <label class="form-check-label" for="">No</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Security</td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="yes" name="security">
+                        <label class="form-check-label" for="">Yes</label>
+                      </td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="no" name="security">
+                        <label class="form-check-label" for="">No</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Parking</td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="yes" name="parking">
+                        <label class="form-check-label" for="">Yes</label>
+                      </td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="no" name="parking">
+                        <label class="form-check-label" for="">No</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>CCTV</td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="yes" name="cctv">
+                        <label class="form-check-label" for="">Yes</label>
+                      </td>
+                      <td class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="" value="no" name="cctv">
+                        <label class="form-check-label" for="">No</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>    
+            </div>
+          </div> 
+        </div><hr class="mx-sm-4">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="mx-sm-5">
+              <h5 class="text-info">Meal Offered:-</h5>
+            </div>
+            <div class=" my-sm-3 mx-sm-5" style=" padding-left: 100px;">
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="yes" name="breakfast">Breakfast
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="yes" name="lunch">Lunch
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="yes" name="dinner">Dinner
+                </label>
+              </div>
+            </div>
+
+            <div class="mx-sm-5 px-sm-5 mt-sm-4 text-center">
+              <!-- <button type="button" class="btn btn-secondary" id="" value="">Reset</button>
+              <button type="button" class="btn btn-success" id="" value="">Submit</button> -->
+              
+              <input type="reset" value="Reset" class="btn btn-secondary" onclick="reset()">
+              <input type="submit" value="Submit" class="btn btn-success" onclick="submit()">
+            </div></form><hr class="mx-sm-4">
+            <footer class="text-center my-0 py-0">
+              <p><small>All Rights Reserved</small></p>
+              <p><small>Designed &amp; Created By <strong>AMIT BHATIA</strong></small></p>
+            </footer> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-------------------Add PG Details Content--------------------->
+
+
+<!-------------------Change Password------------------>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="modal" id="change_password">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Change Password</h5>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <form action="">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label>Old Password</label>
+                  <input type="password" class="form-control" placeholder="Old Password" id="">
+                </div>
+
+                <div class="form-group">
+                  <label>New Password</label>
+                  <input type="password" class="form-control" placeholder="New Password" id="">
+                </div>
+
+                <div class="form-group">
+                  <label>Confirm Password</label>
+                  <input type="password" class="form-control" placeholder="confirm Password" id="">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" id="">Reset</button>
+                <button class="btn btn-success" id="">Change Password</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------Change Password------------------>
+</body>
+</html>

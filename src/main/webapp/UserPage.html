@@ -1,0 +1,303 @@
+<!DOCTYPE html>   <!------@created and designed by AMIT BHATIA-------->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User_Page</title>
+	<link rel="icon" href="PG home logo.jpg">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.6.1-dist\css\bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> <!----bootstrap icons---->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  	
+  	<script type="text/javascript">
+ 
+  	</script>
+  	<style>
+  		.services{
+
+ 			text-align: center;
+ 			padding-top: 10px;
+ 			font-family: cursive;
+ 		}
+
+  		.image
+  		{
+  			background-image: url(contact2.jpg);
+  			background-position: center;
+  			height: 400px;
+  			border-radius: 5px;
+  			filter: blur(1.5px);
+  		}
+
+  		.clr{
+  			background-color: #f5f5f5;
+  		}
+
+  		.touch{
+
+  			position: relative;
+  			top: -120px;
+  			height: 750px;
+  			}
+  			
+		.c{
+  				padding-top: 25px;
+  			}
+  			.card:hover
+ 		{
+     		transform: scale(1.01);
+  			box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  		}
+
+  		.offer{
+  			text-align: center;
+  		}
+
+  	</style>
+</head>
+<body>
+
+<!--------------------Navigation Bar-------------->
+
+<div class="container-fluid" style="height: 50px;">
+	<p class="text-danger">
+		<marquee scrollamount="12" style="padding: 10px;">
+		You can also Book PG from our Website.</marquee>
+	</p>	
+</div>
+
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+	<a class="navbar-brand" href="#" style="margin-left:-9px;"><img src="PG home logo.jpg" alt="logo" width="50px" height="40px"> Stay Home
+	</a>
+     
+	<div class="form-inline mr-auto" action="#">     <!-------.input-sm-2 for resize the search box-------->
+		<input type="search" class="form-control mr-sm-2" placeholder="    search here...">
+		<button type="submit" class="btn btn-warning">search</button>
+	</div>
+
+	<button type="button"class="navbar-toggler mr-sm-1" data-toggle="collapse" data-target="#abc">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="abc">
+		<ul class="navbar-nav ml-auto mr-sm-3">
+			<!-- <li class="nav-item  "><a class="nav-link" href="Home_Tab.html"><span class="bi bi-house-door"></span> Home</a></li> -->
+
+			<li class="nav-item active"><a class="nav-link" href="UserPage.html"><span class="bi bi-building"></span> Book Now</a></li>
+
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><span class="bi bi-geo-alt"></span> Locations</a>
+					<ul class="dropdown-menu">
+						<div class="dropdown-header">Himachal Pradesh</div>
+						<a class="dropdown-item" href="Shimla_location">Shimla</a>
+						<!-- <a class="dropdown-item">Hamirpur</a>
+						<a class="dropdown-item">Kangra</a> -->
+						<div class="dropdown-divider"></div>
+							<div class="dropdown-header">Other Cities</div>
+							<a class="dropdown-item" href="gurgaon_location">Gurugram</a>
+							<a class="dropdown-item" href="Chandigarh_location">Chandigarh</a>
+							<a class="dropdown-item disabled">Delhi(coming soon)</a>
+					</ul>
+			</li>
+			
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" style=""><span class= "bi bi-pencil-square"></span> Manage</a>
+					<ul class="dropdown-menu">
+						<a class="dropdown-item" href="#">Manage Booking</a>
+						<a class="dropdown-item" href="#" data-toggle="modal" data-target="#change_password" style="text-decoration:none;">Change Password</a>
+						<a href="#" class="dropdown-item">Delete Account</a>
+					</ul>
+			</li>
+		</ul>
+
+		<div>
+			<!-- <button class="btn btn-success" data-toggle="modal" data-target="#signin">Sign in</button>
+			<button class="btn btn-danger" data-toggle="modal" data-target="#signup">Sign up</button> -->
+
+			<a href="#" class="text-danger" class="btn btn-danger" style="text-decoration:none;">Sign Out</a>
+		</div>
+	</div>
+
+</nav><br>
+<!--------------------Navigation Bar-------------->
+<!--------------------contact-banner-------------->
+
+<div class="container-fluid">
+	<div class="image">
+		<h1 class="text-center text-light"style="padding-top: 10%; font-family:cursive; font-size:65px;">Book PG</h1>
+	</div>
+</div><br>
+<!--------------------contact-banner-------------->
+
+
+<!----------------our services heading------------------>
+<div class="clr">
+<div class="container-fluid" style="height: 100px; width: 100%;">
+	<div class="row">
+		<div class="col-lg-12 col-sm-12">
+			<div class="services">
+				<h1 class="text-primary">You can Book Your PG from Here.</h1>
+				<p class="text-dark" style="margin-top:20px;">ACROSS THE STREET FROM THE ORDINARY</p>
+			</div>
+		</div>
+	</div>
+</div><br>
+
+<!----------------our services heading------------------>
+
+
+<!----------------card---------------------------->
+<div class="container">
+	<div class="row" id="car" >
+		<div class="col-lg-4 col-sm-4">
+			<div class="card">
+				<img class="card-img-top" src="bedroom3.jpg" alt="image1">
+				<div class="card-body">
+					<h4 class="card-title" align="center">Sai PG</h4>
+					<p class="card-text">This PG offers you the best co-living or Single room PG for boys at a minimum cost price, they offers you the best quality of food, and all other necessities.
+					</p>
+					<span class ="text-danger" style="font-size: 17px;">Rs <strong> 6500/- </strong><small><del> Rs 8000/-</del></small></span>
+					<a  href="booking" class="btn btn-primary float-right">Book Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-4">
+			<div class="card">
+				<img class="card-img-top" src="hall1.jpg" alt="image2">
+				<div class="card-body">
+					<h4 class="card-title" align="center">Rishi PG</h4>
+					<p class="card-text">This PG offers you the single and double sharing room for boys and girls separately, they offers you the amenities like food, almirah and all others household things.
+					</p>
+					<span class ="text-danger" style="font-size: 17px;">Rs <strong> 5500/- </strong><small><del> Rs 9000/-</del></small></span>
+					<a href="#" class="btn btn-primary float-right">Book Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-4">
+			<div class="card">
+				<img class="card-img-top" src="bedroom4.jpg" alt="image2">
+				<div class="card-body">
+					<h4 class="card-title" align="center">Himani PG</h4>
+					<p class="card-text"> Himani PG is the girls pg, which provides girls single, double and triple sharing rooms, they offers you the all basic necessities.
+					</p>
+					<span class ="text-danger" style="font-size: 17px;">Rs <strong> 5000/- </strong><small><del> Rs 8000/-</del></small></span>
+					<a href="#" class="btn btn-primary float-right">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><br>
+
+<!----------------card---------------------------->
+
+<!----------------footer content------------------->
+<footer>
+	<div class="container-fluid bg-warning text-light mx-auto py-3">
+		<div class="row">
+			<div class="col-lg-12 col-sm-12">
+				<div class="services">
+					<h5 style="text-align: center;">Get connected with us on social networks!</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="clr"><br>
+		<div class="container mt-4" style="text-align: center;">
+			<div class="row">
+				<div class="col-lg-4 col-sm-4">
+					<h5> Our Locations</h5>
+					<div id="link">
+					<p class="mt-3"><a href="#" class="text-warning" style="text-decoration: none;">Shimla</a></p>
+					<p><a href="#" class="text-warning" style="text-decoration: none;">New Delhi</a></p>
+					<p><a href="#" class="text-warning"style="text-decoration: none;">Gurugram</a></p>
+					<p><a href="#" class="text-warning"style="text-decoration: none;">Noida</a></p>	
+					</div>	
+			</div>
+			<div class="col-lg-4 col-sm-4">
+					<h5> Quick Links</h5>
+					<p class="mt-3"><a href="contact_tab.html" class="text-warning" style="text-decoration: none;">Complaints</a></p>
+					<p><a href="privacyPolicy.html" class="text-warning" style="text-decoration: none;">Privacy Policy</a></p>
+					<p><a href="aboutus.html" class="text-warning" style="text-decoration: none;">About Us</a></p>
+					<p><a href="contact_tab.html" class="text-warning" style="text-decoration: none;">Contact Us</a></p>		
+			</div>
+			<div class="col-lg-4 col-sm-4">
+					<h5> Follow us on!</h5>
+					<address class="pt-sm-3 text-warning"><span class="fa fa-map-marker" style="color: black;"></span>
+						&nbsp;House no.: 123
+						Sector:15,
+						Near jharsa Chowk<br>
+						Gurugram, Haryana.<br> 
+						122001
+					</address>
+					<p class="d-inline-block">
+						<a href="https://twitter.com/amitbhatia229" target="_blank"><span class="fa fa-twitter fa-lg"></span></a>&nbsp;&nbsp;
+						<a href="https://fb.com/amitbhatia229" target="_blank"><span class="fa fa-facebook fa-lg"></span></a>&nbsp;&nbsp;
+						<a href="https://wa.me/7018464412"target="_blank"><span class="fa fa-whatsapp fa-lg"></span></a>&nbsp;&nbsp;
+						<a href="https://instagram.com/i_amit_bhatia" target="_blank"><span class="fa fa-instagram fa-lg"></span></a>&nbsp;&nbsp;
+						<a href="mailto:amitbhatia.hpushimla@gmail.com"target="_blank"><span class="fa fa-envelope-o fa-lg"></span></a>&nbsp;&nbsp;
+						<a href="https://telegram.me/ab_hpu" target="_blank"><span class="fa fa-telegram fa-lg"></span></a>&nbsp;&nbsp;
+						
+					</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clr">
+	<div class="row mx-auto py-sm-3" style="text-align:center; font-family: sans-serif;">
+		<div class="col-lg-12 col-sm-12">
+			<h6 ><small>Copyright &copy; 2022. All rights are reserved.</small></h6>
+			<p><small>This website is designed &amp; created by<strong> AMIT BHATIA</strong>.</small></p>
+			<p align="right" class="my-sm-0 text-warning"> <small>**Pictures are used only for the pictorial representations.</small></p>
+		</div>
+	</div>
+</div>
+</footer>
+<!----------------footer content------------------->
+<!-------------------Change Password------------------>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="modal" id="change_password">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Change Password</h5>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <form action="user_password" method="POST">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label>Old Password</label>
+                  <input type="password" class="form-control" placeholder="Old Password" name="password"id="">
+                </div>
+
+                <div class="form-group">
+                  <label>New Password</label>
+                  <input type="password" class="form-control" placeholder="New Password" name="new_password" id="">
+                </div>
+
+                <div class="form-group">
+                  <label>Confirm Password</label>
+                  <input type="password" class="form-control" placeholder="confirm Password" name="cpassword"id="">
+                </div>
+                </div>
+                <div class="modal-footer">
+
+                  <input type="reset" class="btn btn-secondary" value="Reset" onclick="reset()">
+                  <input type="submit" class="btn btn-success" value="Change Password" onclick="change()">
+                 <!--  <button class="btn btn-secondary" id="">Reset</button>
+                  <button class="btn btn-success" id="">Change Password</button> -->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------Change Password------------------>
+</body>
+</html>

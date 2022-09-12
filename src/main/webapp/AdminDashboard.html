@@ -1,0 +1,220 @@
+<!DOCTYPE html>      <!------@created and designed by AMIT BHATIA-------->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin_Dashboard</title>
+	<link rel="icon" href="PG home logo.jpg">
+	<link rel="stylesheet" href="bootstrap-4.6.1-dist\css\bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  	
+  	<style type="text/css">
+      .clr
+      {
+        background-color: #f5f5f5;
+      }
+  	.vertical-nav 
+    {
+      padding-top: 50px;
+      width: 100%;
+    }
+
+    .card 
+    {
+    overflow:hidden;
+    }
+
+    .card-body .icon i 
+    {
+    color: rgba(20, 20, 20, 0.15);
+    position: absolute;
+    left: 0;
+    left: auto;
+    right: -10px;
+    bottom: 0;
+    display: block;
+    transform: rotate(-44deg);
+    }
+
+    .card:hover{
+
+      transform: scale(1.01);
+      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
+</style>
+</head>
+<body>
+  <!-------------------horizontal navbar--------------------->
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top py-0">
+  <a class="navbar-brand" href="Home_Tab.html" style="margin-left:-9px;"><img src="PG home logo.jpg" alt="logo" width="50px"            height="40px"> Stay Home</a>
+
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#abc">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="abc">
+    <ul class="navbar nav ml-auto">
+        <a class="nav-link text-dark" href="logout_admin" onclick="logout()"><span class="bi bi-person-circle"></span> Log Out</a>
+    </ul>
+  </div>
+</nav>
+<!-------------------horizonatal navbar--------------------->
+
+<!------------------Vertical navbar--------------------->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-2 bg-light vertical-nav">
+      <h4 class="text-info text-center" style="text-decoration:none;">ADMIN DASHBOARD</h5>
+      <div class="text-center mt-sm-4">
+        <p><a class="text-warning active" href="AdminDashboard.html" style="text-decoration:none;">Dashboard</a></p>
+        <p><a class="text-warning  " href="#" style="text-decoration:none;">Notifications</a></p>
+         <p><a class="text-warning  " href="#" style="text-decoration:none;">Manage PG</a></p>
+        <p><a class="text-warning " href="#" data-toggle="modal" data-target="#change_password" style="text-decoration:none;">Change Password</a></p>
+      </div>
+    </div>
+    <!------------------Vertical navbar--------------------->
+
+
+    <!------------------Cards--------------------->
+    <div class="col-lg-10 col-sm-10 col-md-10 clr">
+      <div class="my-sm-5">
+        <h1 class="display-4 text-info">ADMIN Dashboard</h1>
+        <p class="text-warning">Here you can manage the things...!</p>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-3 col-sm-6 col-md-3 mb-3">
+          <div class="card bg-success text-white">
+            <div class="card-body text-white">
+              <div class="icon">
+                <i class="fa fa-user fa-4x" style="float:right"></i>
+                <span class="bi bi-person-fill fa-2x mt-0"></span>
+                <h5 >Total PG Owners</h5>
+                <div class="">
+                  <h5 class="display-4">00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3 mb-3">
+          <div class="card bg-danger text-white">
+            <div class="card-body text-white">
+              <div class="icon">
+                <i class=" fa fa-address-card-o fa-4x" style="float:right"></i>
+                <span class="fa fa-address-card-o fa-2x mt-2"></span>
+                <h5 class="mt-2">Total Listed PG</h5>
+                <div class="">
+                  <h5 class="display-4">00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3 mb-3">
+          <div class="card bg-warning text-white">
+            <div class="card-body text-white">
+              <div class="icon">
+                <i class="bi bi-card-checklist fa-4x" style="float:right"></i>
+                <span class="bi bi-card-checklist fa-2x mt-0"></span>
+                <h5 >Total States</h5>
+                <div class="">
+                  <h5 class="display-4">00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3 mb-3">
+          <div class="card bg-info text-white">
+            <div class="card-body text-white">
+              <div class="icon">
+                <i class="bi bi-list fa-4x" style="float:right"></i>
+                <span class="bi bi-list fa-2x mt-0"></span>
+                <h5>Total Cities</h5>
+                <div class="">
+                  <h5 class="display-4">00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-md-3 mb-3">
+          <div class="card bg-secondary text-white">
+            <div class="card-body text-white">
+              <div class="icon">
+                <i class="bi bi-list-task fa-4x" style="float:right"></i>
+                <span class="bi bi-list-task fa-2x mt-0"></span>
+                <h5 >Manage PG</h5>
+                <div class="">
+                  <h5 class="display-4">00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><hr class="mx-sm-4">
+      <footer class="text-center my-0 py-0">
+        <p><small>All Rights Are Reserved</small></p>
+        <p><small>Designed & Created By <strong>AMIT BHATIA</strong></small></p>
+      </footer> 
+    </div>
+  </div>
+</div>
+<!--------------Cards------------------------->
+
+<!-------------------Change Password------------------>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="modal" id="change_password">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Change Password</h5>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <form action="change_password" method="POST">
+              <div class="modal-body">
+              <div class="form-group">
+                  <label>Old Password</label>
+                  <input type="hidden" class="form-control" placeholder="email" id="" name="email" value=request.getAttribute(")>
+                </div>
+                <div class="form-group">
+                  <label>Old Password</label>
+                  <input type="password" class="form-control" placeholder="Old Password" id="">
+                </div>
+
+                <div class="form-group">
+                  <label>New Password</label>
+                  <input type="password" class="form-control" placeholder="New Password" id="">
+                </div>
+
+                <div class="form-group">
+                  <label>Confirm Password</label>
+                  <input type="password" class="form-control" placeholder="confirm Password" id="">
+                </div>
+                </div>
+                <div class="modal-footer">
+                <input type="reset" class="btn btn-secondary" value="Reset" onclick="reset()">
+                  <input type="submit" class="btn btn-success" value="Change Password" onclick="change()">
+                  <!--<button class="btn btn-secondary" id="">Reset</button>
+                  <button class="btn btn-success" id="">Change Password</button>--->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------Change Password------------------>
+</body>
+</html>
+ 
