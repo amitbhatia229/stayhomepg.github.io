@@ -11,3 +11,7 @@ Apache Tomcat Server 10
 So you must have to fullfill these requirements in order to run the project
 
 firstly connect the database using xampp server and then setup your apache tomcat server and run the index.html file
+
+For admin login
+username:- admin@gmail.com
+password:-admin
